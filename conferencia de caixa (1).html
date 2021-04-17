@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  
+         <title>Conferência de Caixa</title>
+    <meta charset="utf-8">
+   
+  </head>
+
+  <body background="logo.jpg">
+  <form name="Conferência de Caixa " method="post" id="formulario">
+  
+  <b>Conferência de Caixa Parkfácil Unidade Savassi</b><br />
+  
+  <hr/>
+  
+  <script type="text/javascript">
+  alert('Para iniciar a conferência de caixa clique em Ok !');
+</script>
+
+ <script type="text/javascript">
+ 
+ /*Coleta dados do usuario*/
+ // Pede o usuario a quantidade de notas e moedas e respectivos valores 
+
+var string1 = prompt('Valor de notas de R$2,00.');
+var string2 = prompt('Valor de notas de R$5,00.');
+var string3 = prompt('Valor de notas de R$10,00.');
+var string4 = prompt('Valor de notas de R$20,00.');
+var string5 = prompt('Valor de notas de R$50,00.');
+var string6 = prompt('Valor de notas de R$100,00.');
+var string7 = prompt('Valor de moedas de R$0,5.');
+var string8 = prompt('Valor de moedas de R$0,10.');
+var string9 = prompt('Valor de moedas de R$0,25.');
+var string10 = prompt('Valor de moedas de R$0,50.');
+var string11 = prompt('Valor de moedas de R$1,00.');
+var string12 = prompt('Valor do Caixinha.');
+var string13 = prompt('Valor das moedas no cofre e na gaveta.');
+var string14 = prompt('Insira o valor do caixa do MCPark.');
+var string15 = prompt('Insira o valor do Débito do MCPark.');
+var string16 = prompt('Insira o valor do Crédito do MCPark.');
+var string17 = prompt('Insira o valor Total da máquina de cartão.');
+
+var numero1 = parseFloat(string1.replace(',', '.'));
+var numero2 = parseFloat(string2.replace(',', '.'));
+var numero3 = parseFloat(string3.replace(',', '.'));
+var numero4 = parseFloat(string4.replace(',', '.'));
+var numero5 = parseFloat(string5.replace(',', '.'));
+var numero6 = parseFloat(string6.replace(',', '.'));
+var numero7 = parseFloat(string7.replace(',', '.'));
+var numero8 = parseFloat(string8.replace(',', '.'));
+var numero9 = parseFloat(string9.replace(',', '.'));
+var numero10 = parseFloat(string10.replace(',', '.'));
+var numero11 = parseFloat(string11.replace(',', '.'));
+var numero12 = parseFloat(string12.replace(',', '.'));
+var numero13 = parseFloat(string13.replace(',', '.'));
+var numero14 = parseFloat(string14.replace(',', '.'));
+var numero15 = parseFloat(string15.replace(',', '.'));
+var numero16 = parseFloat(string16.replace(',', '.'));
+var numero17 = parseFloat(string17.replace(',', '.'));
+
+
+document.write('Notas de R$ 2,00: <b>' + numero1 .toFixed(2)+ '</b><br />');
+document.write('Notas de R$ 5,00: <b>' + numero2 .toFixed(2)+ '</b><br />');
+document.write('Notas de R$ 10,00: <b>' + numero3 .toFixed(2)+ '</b><br />');
+document.write('Notas de R$ 20,00: <b>' + numero4 .toFixed(2)+ '</b><br />');
+document.write('Notas de R$ 50,00: <b>' + numero5 .toFixed(2)+ '</b><br />');
+document.write('Notas de R$ 100,00: <b>' + numero6 .toFixed(2)+ '</b><br />');
+document.write('Moedas de R$ 0,05: <b>' + numero7 .toFixed(2)+ '</b><br />');
+document.write('Moedas de R$ 0,10: <b>' + numero8 .toFixed(2)+ '</b><br />');
+document.write('Moedas de R$ 0,25: <b>' + numero9 .toFixed(2)+ '</b><br />');
+document.write('Moedas de R$ 0,50: <b>' + numero10 .toFixed(2)+ '</b><br />');
+document.write('Moedas de R$ 1,00: <b>' + numero11 .toFixed(2)+ '</b><br />');
+document.write('Valor do Caixinha: <b>' + numero12 .toFixed(2)+ '</b><br />');
+document.write('Moedas reserva(Cofre e gaveta): <b>' + numero13 .toFixed(2)+ '</b><br />');
+document.write('Total de dinheiro do MCPark: <b>' + numero14 .toFixed(2)+ '</b><br />');
+document.write('Soma total de tudo: <b>' + (numero1 + numero2+numero3+numero4+numero5+numero6+numero7+numero8+numero9+numero10+numero11+numero12+numero13).toFixed(2) + '</b><br />');
+document.write('A diferença e de : <b>' + (numero1 + numero2+numero3+numero4+numero5+numero6+numero7+numero8+numero9+numero10+numero11+numero12+numero13-numero14).toFixed(2) + '</b><br />');
+
+
+document.write('Total Débito e Crédito MCPark: <b>' + (numero15+numero16).toFixed(2) + '</b><br />');
+document.write('Total Débito e Crédito Máquina: <b>' + (numero17).toFixed(2) + '</b><br />');
+document.write('Diferença no Cartão: <b>' + (numero15+numero16-numero17).toFixed(2) + '</b><br />');
+
+alert("Conferência realizada com sucesso veja a diferença");
+
+
+</script>
+<br />
+<b><hr/><b/>
+<b> Assinatura do Operador <b/> <br />
+		</script>
+	</HEAD>
+	<BODY>
+		<div>
+			<output id="data" style="font-family: 'arial black', 'avant garde'; font-size: 10px;"></output>
+		</div>
+		<div>
+			<output id="hora" style="font-family: 'arial black', 'avant garde'; font-size: 10px;"></output>				
+		</div>			
+	</BODY>
+	<script>
+		function atualizaRelogio(){ 
+			var momentoAtual = new Date();
+			
+			var vhora = momentoAtual.getHours();
+			var vminuto = momentoAtual.getMinutes();
+			var vsegundo = momentoAtual.getSeconds();
+			
+			var vdia = momentoAtual.getDate();
+			var vmes = momentoAtual.getMonth() + 1;
+			var vano = momentoAtual.getFullYear();
+			
+			if (vdia < 10){ vdia = "0" + vdia;}
+			if (vmes < 10){ vmes = "0" + vmes;}
+			if (vhora < 10){ vhora = "0" + vhora;}
+			if (vminuto < 10){ vminuto = "0" + vminuto;}
+			if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+ 
+			dataFormat = vdia + " / " + vmes + " / " + vano;
+			horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+ 
+			document.getElementById("data").innerHTML = dataFormat;
+			document.getElementById("hora").innerHTML = horaFormat;
+ 
+			setTimeout("atualizaRelogio()",1000);
+		}
+	</script>
+<b><hr/><b/>
+Developed <b>Lino Technology ® <b/> - 2019	
+</form> 
+  </body>
+ 
+</html>
